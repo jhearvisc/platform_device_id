@@ -7,6 +7,8 @@ import 'package:flutter/foundation.dart' show kIsWeb;
 
 /// Provides device id information.
 class PlatformDeviceId {
+  const _androidIdPlugin = AndroidId();
+  
   /// Information derived from `android`-`androidId` or `ios`-`identifierForVendor`
   static Future<String?> get getDeviceId async {
     String? deviceId;
